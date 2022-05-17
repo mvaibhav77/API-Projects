@@ -46,9 +46,9 @@ class UI{
 						<a href="${repo.html_url}" target="_blank">${repo.name}</a>
 					</div>
 					<div class="col-md-6">
-						<span class="badge bg-primary">Stars : ${repo.stargazers_count}asa</span>
+						<span class="badge bg-primary">Stars : ${repo.stargazers_count}</span>
 						<span class="badge bg-secondary">Watchers : ${repo.watchers_count}</span>
-						<span class="badge bg-success">Forks : ${repo.forms_count}</span>
+						<span class="badge bg-success">Forks : ${repo.forks_count}</span>
 					</div>
 				</div>
 			</div>
@@ -69,7 +69,8 @@ class UI{
 			const search = document.querySelector('.search');
 			container.insertBefore(error,search);
 			setTimeout(()=>{
-				error.style.display='none';
+				// error.style.display='none';
+				error.remove();
 			},2000)
 		}
 	}

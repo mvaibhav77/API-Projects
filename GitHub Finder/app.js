@@ -15,7 +15,7 @@ searchUser.addEventListener('keyup', (e)=>{
                 //  Show profile
                 //  console.log(data);
                 ui.showProfile(data.profile);
-                ui.showRepos([data.repos]);
+                ui.showRepos(data.repos);
 
              }else{
                 // Show Alert
