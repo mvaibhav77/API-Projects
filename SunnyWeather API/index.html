@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+    <title>SunnyWeather</title>
+</head>
+<body>
+    <div class="card text-white bg-info m-auto mt-4" style="max-width: 33rem;">
+        <h2 class="card-header m-2">SunnyWeather</h2>
+        <div class="container searchContainer">
+            <div class="search card-body bg-info">
+                <h5 class="text-muted">Search a location to know weather</h5>
+                <input type="text" name="" id="searchName" class="form-control bg-light" placeholder="City">
+                <button class="btn btn-outline-primary mt-2 px-5" id="search">Search</button>      
+            </div>
+        </div>
+        <div class="card-body p-auto">
+            <div class="output m-auto bt-1">
+                <div id="loader" align="center" style="display:none">
+                    <img src="Rhombus.gif" alt="" height="100px"width="100px">
+                </div>
+                <div class="mainBody container" align="center"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
